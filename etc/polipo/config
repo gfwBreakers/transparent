@@ -13,25 +13,25 @@
 # Uncomment one of these if you want to allow remote clients to
 # connect:
 
-# Changed by @leask {
+# Changed by @leaskh {
 # proxyAddress = "::0"        # both IPv4 and IPv6
+# proxyAddress = "0.0.0.0"    # IPv4 only
 proxyAddress = "0.0.0.0"
 proxyPort = 6488
-# proxyAddress = "0.0.0.0"    # IPv4 only
 # }
 
 # If you are enabling 'proxyAddress' above, then you want to enable the
 # 'allowedClients' variable to the address of your network, e.g.
 # allowedClients = 127.0.0.1, 192.168.42.0/24
-                                            
-# allowedClients = 127.0.0.1              
+
+# allowedClients = 127.0.0.1
 
 # Uncomment this if you want your Polipo to identify itself by
 # something else than the host name:
 
-# Changed by @leask {
+# Changed by @leaskh {
 # proxyName = "polipo.example.org"
-proxyName = "wpad.gfwbreakers.org"
+proxyName = "gfwbreakers.org"
 # }
 
 # Uncomment this if there's only one user using this instance of Polipo:
@@ -47,8 +47,8 @@ proxyName = "wpad.gfwbreakers.org"
 # Changed by @leask {
 # socksParentProxy = "localhost:9050"
 # socksProxyType = socks5
-#socksParentProxy = "localhost:8964"
-#socksProxyType = socks5
+# @leaskh: socksParentProxy = "localhost:8964"
+# @leaskh: socksProxyType = socks5
 parentProxy = "localhost:6488"
 # }
 
@@ -78,7 +78,7 @@ parentProxy = "localhost:6488"
 # Uncomment this if you want to put the on-disk cache in a
 # non-standard location:
 
-# Changed by @leask {
+# Changed by @leaskh {
 # diskCacheRoot = "~/.polipo-cache/"
 diskCacheRoot = "/home/leask/.polipo-cache/"
 # }
