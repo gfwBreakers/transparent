@@ -1,3 +1,6 @@
 [submodule "dnsmasq-china-list"]
 	path = dnsmasq-china-list
 	url = https://github.com/felixonmars/dnsmasq-china-list
+[submodule "Tcp-DNS-proxy"]
+	path = Tcp-DNS-proxy
+	url = https://github.com/henices/Tcp-DNS-proxy.git
