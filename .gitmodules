@@ -1,0 +1,3 @@
+[submodule "dnsmasq-china-list"]
+	path = dnsmasq-china-list
+	url = https://github.com/felixonmars/dnsmasq-china-list
