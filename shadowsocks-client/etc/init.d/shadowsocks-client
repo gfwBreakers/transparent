@@ -15,12 +15,12 @@ start() {
 stop() {
     echo "Stopping shadowsocks-client..."
     if [ -x $DAEMON ]; then
-        start-stop-daemon -o -c $USER -K -u $USER -x $DAEMON
+        start-stop-daemon -o -c $USER -K -u $USER -x $DAEMON -- $OPTS
     fi
 }
 
 status() {
-    dbpid=`pgrep -u $USER shadowsocks-client`
+    dbpid=`pgrep -u $USER sslocal`
     if [ -z $dbpid ]; then
         echo "shadowsocks-client is not running."
     else
