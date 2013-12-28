@@ -2,7 +2,7 @@
 # shadowsocks-client service
 
 DAEMON='/usr/local/bin/node'
-OPTS='/usr/local/bin/sslocal -c /home/leask/shadowsocks-configs/shadowsocks.json'
+OPTS='/usr/local/bin/sslocal -c /gfwbreakers/transparent/shadowsocks-client/config.json'
 USER='root'
 
 start() {
@@ -29,7 +29,6 @@ status() {
 }
 
 case "$1" in
-
     start)
         start
         ;;
@@ -46,7 +45,6 @@ case "$1" in
     *)
         echo "Usage: /etc/init.d/shadowsocks-client {start|stop|reload|force-reload|restart|status}"
         exit 1
-
 esac
 
 exit 0
