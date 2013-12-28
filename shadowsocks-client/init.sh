@@ -1,3 +1,4 @@
 #!/bin/sh
 sudo npm install -g shadowsocks
-$ chmod +x /etc/init.d/dropbox $ update-rc.d dropbox defaults
+sudo ln -sf /gfwbreakers/transparent/shadowsocks-client/etc/init.d/shadowsocks-client /etc/init.d/
+sudo update-rc.d shadowsocks-client defaults
