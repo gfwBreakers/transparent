@@ -80,7 +80,7 @@ parentProxy = "localhost:6488"
 
 # Changed by @leaskh {
 # diskCacheRoot = "~/.polipo-cache/"
-diskCacheRoot = "/home/leask/.polipo-cache/"
+diskCacheRoot = "/gfwbreakers/transparent/.polipo-cache/"
 # }
 
 # Uncomment this if you want to disable the local web server:
