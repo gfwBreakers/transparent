@@ -2,14 +2,13 @@
 # shadowsocks-client service
 
 DAEMON='/usr/local/bin/sslocal'
-OPTS[0]='-c'
-OPTS[1]='/home/leask/shadowsocks-configs/shadowsocks.json'
+OPTS='-c /home/leask/shadowsocks-configs/shadowsocks.json'
 USER='root'
 
 start() {
     echo "Starting shadowsocks-client..."
     if [ -x $DAEMON ]; then
-        start-stop-daemon -b -o -c $USER -S -u $USER -x $DAEMON -- "${OPTS[@]}"
+        start-stop-daemon -b -o -c $USER -S -u $USER -x $DAEMON -- $OPTS
     fi
 }
 
