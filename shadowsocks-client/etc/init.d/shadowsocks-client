@@ -1,8 +1,8 @@
 #!/bin/sh
 # shadowsocks-client service
 
-DAEMON=/usr/local/bin/sslocal -c /home/leask/shadowsocks-configs/shadowsocks.json
-USER=root
+DAEMON="/usr/local/bin/sslocal -c /home/leask/shadowsocks-configs/shadowsocks.json"
+USER="root"
 
 start() {
     echo "Starting shadowsocks-client..."
