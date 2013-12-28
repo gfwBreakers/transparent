@@ -6,9 +6,11 @@ A smart proxy services, which helps walk around GFW.
 
 ## Dependences
 * Machine A outside GFW
+    - Debian / Ubuntu
     - Git
     - NodeJS
 * Machine B inside GFW
+    - Debian / Ubuntu
     - Git
     - Python
     - NodeJS
