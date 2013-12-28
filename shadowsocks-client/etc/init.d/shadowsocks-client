@@ -1,8 +1,8 @@
 #!/bin/sh
 # shadowsocks-client service
 
-DAEMON='/usr/local/bin/sslocal'
-OPTS='-c /home/leask/shadowsocks-configs/shadowsocks.json'
+DAEMON='/usr/local/bin/node'
+OPTS='/usr/local/bin/sslocal -c /home/leask/shadowsocks-configs/shadowsocks.json'
 USER='root'
 
 start() {
@@ -20,7 +20,7 @@ stop() {
 }
 
 status() {
-    dbpid=`pgrep -u $USER sslocal`
+    dbpid=`pgrep -u $USER node`
     if [ -z $dbpid ]; then
         echo "shadowsocks-client is not running."
     else
