@@ -1078,7 +1078,7 @@ enforce-blocks 0
 #      anywhere, with the exception that 192.168.45.73 may not access
 #      the IP address behind www.dirty-stuff.example.com:
 #
-#        permit-access  192.168.45.64/26 
+#        permit-access  192.168.45.64/26
 #        deny-access   192.168.45.73  www.dirty-stuff.example.com
 #
 #      Allow access from the IPv4 network 192.0.2.0/24 even if listening
@@ -1198,7 +1198,7 @@ buffer-limit 4096
 #      Everything goes to an example parent proxy, except SSL on port
 #      443 (which it doesn't handle):
 #
-#        forward   /      parent-proxy.example.org:8080 
+#        forward   /      parent-proxy.example.org:8080
 #        forward   :443   .
 #
 #
@@ -1279,7 +1279,7 @@ buffer-limit 4096
 #      ISP's proxy by way of example.com's corporate SOCKS 4A gateway
 #      to the Internet.
 #
-#        forward-socks4a   /       socks-gw.example.com:1080    www-cache.isp.example.net:8080 
+#        forward-socks4a   /       socks-gw.example.com:1080    www-cache.isp.example.net:8080
 #        forward           .example.com        .
 #
 #
@@ -1640,8 +1640,8 @@ forward .zongheng.com .
 #      if you need to access local servers you therefore might want
 #      to make some exceptions:
 #
-#        forward         192.168.*.*/     .  
-#        forward         10.*.*.*/        .  
+#        forward         192.168.*.*/     .
+#        forward         10.*.*.*/        .
 #        forward         127.*.*.*/       .
 #
 #
@@ -1706,7 +1706,10 @@ forward .zongheng.com .
 #
 #      forwarded-connect-retries 1
 #
-forwarded-connect-retries  0
+# Changed by @leaskh {
+# forwarded-connect-retries  0
+forwarded-connect-retries 1
+# }
 #
 #
 #  6. MISCELLANEOUS
