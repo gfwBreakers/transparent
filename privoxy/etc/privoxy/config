@@ -368,7 +368,9 @@ logdir /var/log/privoxy
 #      to allow previously forbidden characters.
 #
 actionsfile match-all.action # Actions that are applied to all sites and maybe overruled later on.
-actionsfile default.action   # Main actions file
+# Changed by @leaskh {
+#actionsfile default.action   # Main actions file
+# }
 actionsfile user.action      # User customizations
 #
 #
