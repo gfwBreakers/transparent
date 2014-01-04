@@ -4,3 +4,6 @@
 [submodule "Flora_Pac/Flora_Pac"]
 	path = Flora_Pac/Flora_Pac
 	url = https://github.com/Leask/Flora_Pac.git
+[submodule "Tcp-DNS-proxy/Tcp-DNS-proxy"]
+	path = Tcp-DNS-proxy/Tcp-DNS-proxy
+	url = https://github.com/gfwBreakers/Tcp-DNS-proxy.git
