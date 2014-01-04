@@ -2,7 +2,7 @@
 # ssh-D socks proxy service
 
 DAEMON='/usr/bin/autossh'
-OPTS='autossh -M20000 -q -N -D 8965 -g *@******.***'
+OPTS='-M20000 -q -N -D 8965 -g *@******.***'
 USER='root'
 
 start() {
