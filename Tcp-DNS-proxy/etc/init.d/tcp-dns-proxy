@@ -1,0 +1,50 @@
+#!/bin/sh
+# Tcp-DNS-proxy service
+
+DAEMON='/usr/bin/python'
+OPTS='/gfwbreakers/transparent/Tcp-DNS-proxy/Tcp-DNS-proxy/tcpdns.py'
+USER='root'
+
+start() {
+    echo "Starting tcp-dns-proxy..."
+    if [ -x $DAEMON ]; then
+        start-stop-daemon -b -o -c $USER -S -u $USER -x $DAEMON -- $OPTS
+    fi
+}
+
+stop() {
+    echo "Stopping tcp-dns-proxy..."
+    if [ -x $DAEMON ]; then
+        start-stop-daemon -o -c $USER -K -u $USER -x $DAEMON -- $OPTS
+    fi
+}
+
+status() {
+    dbpid=`pgrep -u $USER python`
+    if [ -z $dbpid ]; then
+        echo "tcp-dns-proxy is not running."
+    else
+        echo "tcp-dns-proxy is running with pid $dbpid."
+    fi
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart|reload|force-reload)
+        stop
+        start
+        ;;
+    status)
+        status
+        ;;
+    *)
+        echo "Usage: /etc/init.d/tcp-dns-proxy {start|stop|reload|force-reload|restart|status}"
+        exit 1
+esac
+
+exit 0
