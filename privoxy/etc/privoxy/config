@@ -1294,7 +1294,8 @@ buffer-limit 4096
 #
 # Changed by @leask {
 #        forward-socks5   /               127.0.0.1:9050 .
-forward-socks5   /               127.0.0.1:8964 .
+# forward-socks5   /               127.0.0.1:8964 .
+forward / 127.0.0.1:6488
 forward :5223 .
 forward :3478 .
 forward :3479 .
