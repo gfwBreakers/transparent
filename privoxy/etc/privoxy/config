@@ -369,9 +369,9 @@ logdir /var/log/privoxy
 #
 # Changed by @leaskh {
 #actionsfile match-all.action # Actions that are applied to all sites and maybe overruled later on.
+#actionsfile default.action   # Main actions file
+#actionsfile user.action      # User customizations
 # }
-actionsfile default.action   # Main actions file
-actionsfile user.action      # User customizations
 #
 #
 #  2.5. filterfile
@@ -1297,7 +1297,8 @@ buffer-limit 4096
 # Changed by @leask {
 #        forward-socks5   /               127.0.0.1:9050 .
 # forward-socks5   /               127.0.0.1:8964 .
-forward / 127.0.0.1:6488
+####forward / 127.0.0.1:6488
+forward-socks5 / 127.0.0.1:8965
 forward-socks5 .googlevideo.com 127.0.0.1:8965 .
 forward :5223 .
 forward :3478 .
