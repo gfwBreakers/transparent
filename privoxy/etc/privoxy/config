@@ -1299,7 +1299,7 @@ buffer-limit 4096
 # forward-socks5   /               127.0.0.1:8964 .
 forward / 127.0.0.1:6487
 # forward-socks5   /               127.0.0.1:8965 .
-forward-socks5 .googlevideo.com 127.0.0.1:8965 .
+# forward-socks5 .googlevideo.com 127.0.0.1:8965 .
 forward :5223 .
 forward :3478 .
 forward :3479 .
