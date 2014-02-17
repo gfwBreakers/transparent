@@ -16,7 +16,7 @@ stop() {
     echo "Stopping shadowsocks-server..."
     if [ -x $DAEMON ]; then
         start-stop-daemon -o -c $USER -K -u $USER -x $DAEMON -- $OPTS
-        sleep 5
+        sleep 7
     fi
 }
 
