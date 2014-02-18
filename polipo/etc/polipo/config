@@ -47,9 +47,9 @@ proxyName = "gfwbreakers.org"
 # Changed by @leask {
 # socksParentProxy = "localhost:9050"
 # socksProxyType = socks5
-# socksParentProxy = "localhost:8964"
-# socksProxyType = socks5
-parentProxy = "localhost:6487"
+socksParentProxy = "localhost:8964"
+socksProxyType = socks5
+# parentProxy = "localhost:6487"
 # }
 
 
