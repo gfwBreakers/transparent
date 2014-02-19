@@ -1296,12 +1296,11 @@ buffer-limit 4096
 #
 # Changed by @leask {
 #        forward-socks5   /               127.0.0.1:9050 .
-# forward-socks5   /               127.0.0.1:8964 .
+forward-socks5   /               127.0.0.1:8964 .
 # stunnel:
 # forward / 127.0.0.1:6487
 # polipo
-forward / 127.0.0.1:6488
-# forward-socks5   /               127.0.0.1:8965 .
+# forward / 127.0.0.1:6488
 # forward-socks5 .googlevideo.com 127.0.0.1:8965 .
 forward .googlevideo.com 127.0.0.1:6487
 forward :5223 .
