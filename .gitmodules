@@ -7,3 +7,6 @@
 [submodule "Tcp-DNS-proxy/Tcp-DNS-proxy"]
 	path = Tcp-DNS-proxy/Tcp-DNS-proxy
 	url = https://github.com/gfwBreakers/Tcp-DNS-proxy.git
+[submodule "M2Crypto"]
+	path = M2Crypto
+	url = https://github.com/clowwindy/M2Crypto.git
