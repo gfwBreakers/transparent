@@ -7,3 +7,6 @@
 [submodule "M2Crypto"]
 	path = M2Crypto
 	url = https://github.com/clowwindy/M2Crypto.git
+[submodule "dnsmasq/dnsmasq-china-list"]
+	path = dnsmasq/dnsmasq-china-list
+	url = https://github.com/gfwBreakers/dnsmasq-china-list.git
