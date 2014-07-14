@@ -1,12 +1,6 @@
 [submodule "Flora_Pac/Flora_Pac"]
 	path = Flora_Pac/Flora_Pac
 	url = https://github.com/Leask/Flora_Pac.git
-[submodule "Tcp-DNS-proxy/Tcp-DNS-proxy"]
-	path = Tcp-DNS-proxy/Tcp-DNS-proxy
-	url = https://github.com/gfwBreakers/Tcp-DNS-proxy.git
 [submodule "M2Crypto"]
 	path = M2Crypto
 	url = https://github.com/clowwindy/M2Crypto.git
-[submodule "dnsmasq/dnsmasq-china-list"]
-	path = dnsmasq/dnsmasq-china-list
-	url = https://github.com/gfwBreakers/dnsmasq-china-list.git
