@@ -1443,6 +1443,7 @@ forward .cn.bing.com .
 forward .cn.coremetrics.com .
 forward .cn.debian.org .
 forward .cn.msn.com .
+forward .cn .
 forward .cnak2.englishtown.com .
 forward .cnbeta.com .
 forward .cnbetacdn.com .
