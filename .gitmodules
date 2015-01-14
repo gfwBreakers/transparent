@@ -1,6 +1,3 @@
 [submodule "Flora_Pac/Flora_Pac"]
 	path = Flora_Pac/Flora_Pac
 	url = https://github.com/Leask/Flora_Pac.git
-[submodule "M2Crypto"]
-	path = M2Crypto
-	url = https://github.com/clowwindy/M2Crypto.git
